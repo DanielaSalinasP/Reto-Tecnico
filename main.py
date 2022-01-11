@@ -58,7 +58,7 @@ ventana= Tk()
 
 questions: list = [
     [
-        Question("GASTRONOMIA","¿Qué fruta seca sale de las uvas?",
+        Question("GASTRONOMIA","¿Qué fruta seca sale de las uvas?", 
                  {"Ciruelas": False, "Anacardo": False, "Pasas": True, "Ninguna de las anteriores": False}, ventana),
         Question("MATEMATICAS","¿A cuánto equivale Pi?",
                  {"3.141592": True, "3.1492145": False, "3.144433": False, "3.149412": False}, ventana),
@@ -183,6 +183,7 @@ def mostra():
                 exit()
         else:
             messagebox.showinfo("PERDISTE", "¡Has perdido!\nSuerte a la proxima")
+            persistir()
             exit()
     def abandonar():
         respuesta = messagebox.askquestion(title="Abanadonar la partida",
@@ -194,6 +195,8 @@ def mostra():
             exit()
     Button(ventana,text="Salir", command=abandonar, font='Helvetica 9 bold', background = "red4", foreground = "white").place(x=11,y=264)
     Button(ventana,text="Siguiente", command=vertificar, font='Helvetica 9 bold', background = "green4", foreground = "white").place(x=400,y=264)
+
+
 
 round = Round(30)
 player = Player()
