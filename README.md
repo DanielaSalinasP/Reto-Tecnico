@@ -1,2 +1,2 @@
-# Reto-Tecnico
+# Reto Tecnico
 Juego de preguntas - Python
