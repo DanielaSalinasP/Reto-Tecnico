@@ -183,7 +183,6 @@ def mostra():
                 exit()
         else:
             messagebox.showinfo("PERDISTE", "¡Has perdido!\nSuerte a la proxima")
-            persistir()
             exit()
     def abandonar():
         respuesta = messagebox.askquestion(title="Abanadonar la partida",
